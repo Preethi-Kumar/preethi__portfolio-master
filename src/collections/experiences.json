@@ -1,0 +1,23 @@
+[
+	{
+		"dates": "Apr 2021 . May 2023",
+		"role": "Lead Developer",
+		"company": "Benfy",
+		"description": "Built growth-focused websites with SEO, UX, and conversion optimization. Developed and enhanced Shopify e-commerce stores. Finding solution to complex problems and leading a team of developers and designers.",
+		"logo": "/assets/images/experiences/benfy.jpg"
+	},
+	{
+		"dates": "Apr 2019 . Mar 2021",
+		"role": "Senior Developer",
+		"company": "Benfy",
+		"description": "Developed websites using Laravel, PHP, and WordPress, focusing on SEO-driven development and optimization. Handling multiple projects and working with a team of developers and managers.",
+		"logo": "/assets/images/experiences/benfy.jpg"
+	},
+	{
+		"dates": "Dec 2017 . Mar 2019 ",
+		"role": "Junior Developer",
+		"company": "Benfy",
+		"description": "As a Junior Developer, involved in the development of multiple frontend projects. While learning new technologies and frameworks, I also worked on improving my skills in Programmatic SEO, Conversion Rate Optimization, Digital Experience Optimization.",
+		"logo": "/assets/images/experiences/benfy.jpg"
+	}
+]

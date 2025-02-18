@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Orthomed Hospitals",
+		"description": "I optimize website performance, security, and responsiveness while ensuring regular content updates for SEO, engagement, and brand consistency. ",
+		"image": "/assets/images/client-logos/orthomed.png"
+		
+	},
+	{
+		"name": "Rao Hospital",
+		"description": "Developed and managed a WordPress website, ensuring content updates, plugin integrations, and SEO maintenance. Optimized responsiveness and performance to enhance user experience and search rankings.",
+		"image": "/assets/images/client-logos/rao.png"
+		
+	},
+	{
+		"name": "Indigo Womens Center",
+		"description": "Developed a website from scratch using Laravel, integrating Google Form submissions for seamless data collection. Ensured responsiveness and performance optimization for an enhanced user experience.",
+		"image": "/assets/images/client-logos/indigo.png"
+		
+	},
+	{
+		"name": "Sri Venkateswara College of Engineering",
+		"description": "Developed on Next.js with a focus on CSS styling, SEO optimization, and form integration.",
+		"image": "/assets/images/client-logos/svec.png"
+		
+	},
+	{
+		"name": "BeWell Hospitals",
+		"description": "Maintaing a healthy website, content updation, marketing driven development activities.",
+		"image": "/assets/images/client-logos/bewell.png"
+		
+	},
+	{
+		"name": "Martin Group",
+		"description": "Developed a website using PHP, incorporating CSS for styling, ensuring mobile responsiveness, optimizing for SEO, and integrating an inquiry form.",
+		"image": "/assets/images/client-logos/martin.png"
+		
+	},
+	{
+		"name": "Vishwaksena Global School",
+		"description": "Developed a website using Laravel with reusable components and an inquiry form. Ensured functionality, efficiency, and scalability.",
+		"image": "/assets/images/client-logos/viswaksena.png"
+		
+	},
+	{
+		"name": "LML Homes",
+		"description": "Developed a dynamic website using Laravel with reusable components for efficiency and scalability. Integrated an inquiry form for seamless user interaction.",
+		"image": "/assets/images/client-logos/lml.png"
+		
+	}
+]

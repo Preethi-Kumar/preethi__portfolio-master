@@ -1,0 +1,108 @@
+---
+import Button from "../components/button.astro";
+import Projects from "../components/home/projects.astro";
+import Separator from "../components/home/separator.astro";
+import Writings from "../components/home/writings.astro";
+import Layout from "../layouts/main.astro";
+import Experience from "./experience.astro";
+import experiences from "../collections/experiences.json";
+import PageHeading from "../components/page-heading.astro";
+import AboutExperience from "../components/about-experience.astro";
+---
+
+<Layout title="Preethi Portfolio">
+  <div
+    class="relative z-20 w-full max-w-5xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
+  >
+    <div class="flex flex-col items-center md:flex-row">
+      <div class="relative w-full md:w-1/2">
+        <h1
+          class="mb-5 text-2xl font-bold leading-tight  md:text-4xl  dark:text-white"
+        >
+          Hello, <br/><span class="dark:text-pink-200 text-4xl lg:text-6xl">I'm Preethi</span>
+        </h1>
+        <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
+          As a Front-End Developer with 5 years of experience, I specialize in building intuitive and visually appealing user interfaces.
+        </p>
+
+        <p class="mb-2 dark:text-neutral-200 title-skill">
+          The skills,tools and technologies I use
+        </p>
+
+        <div class="mt-7">
+
+        <img src="/assets/images/logo-c.png" class="relative z-30 w-full rounded-xl tool-logo" />
+
+        
+        </div>
+
+        
+        <a target="_blank" href="https://www.linkedin.com/in/preethi-kumar-56a759163/" class="inline-flex gap-2 w-auto px-4 py-2 mt-10 text-xs font-semibold duration-300 ease-out border rounded-full bg-neutral-900 dark:bg-white dark:text-neutral-900 text-neutral-100 hover:border-neutral-700 border-neutral-900 dark:hover:border-neutral-300 hover:bg-white dark:hover:bg-black dark:hover:text-white hover:text-neutral-900">
+          <span>Follow me on</span> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+          </svg>
+        </a>        
+      </div>
+      <div
+        class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
+      >
+        <div class="relative z-50 w-full">
+          
+          <div class="relative z-30">
+            <img
+              src="/assets/images/hero-image.png"
+              loading="eager"
+              decoding="auto"
+              class="relative z-30 w-full aspect-[790/790] md:max-w-md mx-auto dark:-translate-y-0.5"
+            />
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <a href="#projects" class="m-0 p-0">
+      <Separator text="Check out my projects" />
+    </a>
+  </div>
+  <div class="project">
+    <Projects />
+    
+  </div>
+  <Separator text="Experience" />
+
+  <section class="max-w-5xl mx-auto px-7 lg:px-0 main-title">
+    <PageHeading
+      title="My Experience"
+      
+    />
+
+    <div class="px-5 py-10">
+      {
+        experiences.slice(0,2).map((experience) => {
+          return (
+            <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
+              <AboutExperience
+                dates={experience.dates}
+                role={experience.role}
+                company={experience.company}
+                description={experience.description}
+                logo={experience.logo}
+              />
+            </div>
+          )
+        })
+      }
+    </div>
+
+    <div class="flex items-center justify-center w-full py-5">
+      <Button text="View All My Experience" link="/experience" />
+    </div>
+  </section>
+</Layout>
+
+

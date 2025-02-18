@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add Your Custom CSS Here */
+
+h1,h2,h3,h4,h5,h6{
+
+  font-family: "DM Sans", serif !important;
+
+}
+
+p,a,link,ol,ul,span{
+
+  font-family: "DM Sans", serif !important;
+
+}
+
+.playwrite-gb-s {
+  font-family: "Playwrite GB S", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.prose img {
+  border-radius: 30px;
+}
+
+#sun {
+  transform: translate3d(0, 0px, 0);
+}
+
+#moon {
+  transform: translate3d(0, 0px, 0);
+}
+
+#darkToggle:hover #sun {
+  transform: translate3d(0, 10px, 0);
+}
+
+#darkToggle:hover #moon {
+  transform: translate3d(0, 10px, 0);
+}
+
+html.dark #darkToggle:hover .horizon {
+  border-color: #718096 !important;
+}
+
+html.dark {
+    color-scheme: dark;
+}
+
+.horizon .setting {
+  animation: 1s ease 0s 1 setting;
+}
+
+.horizon .rising {
+  animation: 1s ease 0s 1 rising;
+}
+
+@keyframes setting {
+  0% {
+    transform: translate3d(0, 10px, 0)
+  }
+
+  40% {
+    transform: translate3d(0, -2px, 0)
+  }
+
+  to {
+    transform: translate3d(0, 30px, 0)
+  }
+}
+
+@keyframes rising {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0)
+  }
+
+  40% {
+    opacity: 1;
+    transform: translate3d(0, -2px, 0)
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 10, 0)
+  }
+}
+
+
+.title-skill{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p{font-size: 15 !important;}
+
+.pro-text{font-size: 14px !important;}
+
+
+.project .pro-text
+{
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main-title h2{
+
+}
+
+.tool-logo{width: 65%;}
+
+.pj-bg{background-color: #f6f6f6;}
